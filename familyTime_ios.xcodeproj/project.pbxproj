@@ -17,7 +17,7 @@
 		B4F6F8351C426DDA00154692 /* familyTime_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F8341C426DDA00154692 /* familyTime_iosTests.m */; };
 		B4F6F8401C426DDA00154692 /* familyTime_iosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F83F1C426DDA00154692 /* familyTime_iosUITests.m */; };
 		B4F6F8501C427DC500154692 /* TimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F84F1C427DC500154692 /* TimeTableViewController.m */; };
-		B4F6F8531C427EBB00154692 /* MemberListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F8521C427EBB00154692 /* MemberListCell.m */; };
+		B4F6F8531C427EBB00154692 /* DetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F8521C427EBB00154692 /* DetailCell.m */; };
 		B4F6F8571C42A22700154692 /* TimeDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F8561C42A22700154692 /* TimeDetailTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -58,8 +58,8 @@
 		B4F6F8411C426DDA00154692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4F6F84E1C427DC500154692 /* TimeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTableViewController.h; sourceTree = "<group>"; };
 		B4F6F84F1C427DC500154692 /* TimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTableViewController.m; sourceTree = "<group>"; };
-		B4F6F8511C427EBB00154692 /* MemberListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberListCell.h; sourceTree = "<group>"; };
-		B4F6F8521C427EBB00154692 /* MemberListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberListCell.m; sourceTree = "<group>"; };
+		B4F6F8511C427EBB00154692 /* DetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCell.h; sourceTree = "<group>"; };
+		B4F6F8521C427EBB00154692 /* DetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCell.m; sourceTree = "<group>"; };
 		B4F6F8551C42A22700154692 /* TimeDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeDetailTableViewController.h; sourceTree = "<group>"; };
 		B4F6F8561C42A22700154692 /* TimeDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeDetailTableViewController.m; sourceTree = "<group>"; };
 		B4F6F8581C42A88400154692 /* familyTime_ios.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = familyTime_ios.pch; sourceTree = SOURCE_ROOT; };
@@ -174,8 +174,8 @@
 		B4F6F8541C427EC000154692 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B4F6F8511C427EBB00154692 /* MemberListCell.h */,
-				B4F6F8521C427EBB00154692 /* MemberListCell.m */,
+				B4F6F8511C427EBB00154692 /* DetailCell.h */,
+				B4F6F8521C427EBB00154692 /* DetailCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -312,7 +312,7 @@
 			files = (
 				B4F6F8571C42A22700154692 /* TimeDetailTableViewController.m in Sources */,
 				B4F6F81F1C426DD900154692 /* TimeViewController.m in Sources */,
-				B4F6F8531C427EBB00154692 /* MemberListCell.m in Sources */,
+				B4F6F8531C427EBB00154692 /* DetailCell.m in Sources */,
 				B4F6F81C1C426DD900154692 /* AppDelegate.m in Sources */,
 				B4F6F8251C426DD900154692 /* familyTime_ios.xcdatamodeld in Sources */,
 				B4F6F8501C427DC500154692 /* TimeTableViewController.m in Sources */,

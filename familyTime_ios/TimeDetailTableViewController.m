@@ -7,9 +7,11 @@
 //
 
 #import "TimeDetailTableViewController.h"
+#import "DetailCell.h"
 
-@interface TimeDetailTableViewController ()
-
+@interface TimeDetailTableViewController (){
+    
+}
 @end
 
 @implementation TimeDetailTableViewController
@@ -31,29 +33,38 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 1;
+    return 6;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return  505;
+
+    if (indexPath.item == 0) {
+        return  505/2;
+    }
+    return 32;
 }
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
+    tableView.alwaysBounceVertical = NO;
+    DetailCell *cell = [tableView dequeueReusableCellWithIdentifier:K_DETAIL_CELL];
+
+    if (cell == nil) {
+        cell = [[DetailCell alloc] initWithCustomNibAndController:self tableRow:indexPath.row memberID:self.memberID];
+    }
     // Configure the cell...
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.

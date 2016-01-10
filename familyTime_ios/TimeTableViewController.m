@@ -9,7 +9,7 @@
 #import "TimeTableViewController.h"
 #import "TimeDetailTableViewController.h"
 
-#define K_MEMBER_CELL                @"MemberListCell"
+
 
 
 @interface TimeTableViewController ()
@@ -23,7 +23,6 @@
     
     // Uncomment the following line to preserve selection between presentations.
      self.clearsSelectionOnViewWillAppear = NO;
-    [self.view setBackgroundColor: TextColor];
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
      self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
@@ -42,7 +41,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return MY_ARRAY.count;
+    return Name_ARRAY.count;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -58,8 +57,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:K_MEMBER_CELL];
     }
     // Configure the cell...
-    cell.imageView.image = [UIImage imageNamed:[MY_ARRAY objectAtIndex:indexPath.item]];
-    cell.textLabel.text = [MY_ARRAY objectAtIndex:indexPath.item];
+    cell.imageView.image = [UIImage imageNamed:[Name_ARRAY objectAtIndex:indexPath.item]];
+    cell.textLabel.text = [Name_ARRAY objectAtIndex:indexPath.item];
     cell.detailTextLabel.text = @"Details about update time";
     cell.detailTextLabel.textColor = TextColor;
     return cell;
@@ -67,6 +66,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     TimeDetailTableViewController *detailData = [[TimeDetailTableViewController alloc] init];
+    detailData.memberID = indexPath.row;
     [self.navigationController pushViewController:detailData animated:YES];
 }
 
