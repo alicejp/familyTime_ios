@@ -25,6 +25,10 @@
      self.clearsSelectionOnViewWillAppear = NO;
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
      self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]
+                                             initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                             target:self
+                                             action:@selector(Add:)];
     
      self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
@@ -69,7 +73,14 @@
     detailData.memberID = indexPath.row;
     [self.navigationController pushViewController:detailData animated:YES];
 }
+- (void)Add:(id)sender{
+    EKEventStore *eventStore = [[EKEventStore alloc] init];
+    EKCalendar *calendar = [EKCalendar calendarForEntityType:EKEntityTypeEvent eventStore:eventStore];
+    calendar.title = @"Demo calendar";
+    
+    // Iterate over all sources in the event store and look for the local source
 
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

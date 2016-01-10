@@ -19,6 +19,7 @@
 		B4F6F8501C427DC500154692 /* TimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F84F1C427DC500154692 /* TimeTableViewController.m */; };
 		B4F6F8531C427EBB00154692 /* DetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F8521C427EBB00154692 /* DetailCell.m */; };
 		B4F6F8571C42A22700154692 /* TimeDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F8561C42A22700154692 /* TimeDetailTableViewController.m */; };
+		B4F6F85C1C42EDEC00154692 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F6F85B1C42EDEC00154692 /* EventKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		B4F6F8581C42A88400154692 /* familyTime_ios.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = familyTime_ios.pch; sourceTree = SOURCE_ROOT; };
 		B4F6F8591C42AB2400154692 /* FTDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTDefines.h; sourceTree = "<group>"; };
 		B4F6F85A1C42AB3A00154692 /* FTConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTConstant.h; sourceTree = "<group>"; };
+		B4F6F85B1C42EDEC00154692 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F6F85C1C42EDEC00154692 /* EventKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +138,7 @@
 				B4F6F82B1C426DD900154692 /* Info.plist */,
 				B4F6F8231C426DD900154692 /* familyTime_ios.xcdatamodeld */,
 				B4F6F8181C426DD900154692 /* main.m */,
+				B4F6F85B1C42EDEC00154692 /* EventKit.framework */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
