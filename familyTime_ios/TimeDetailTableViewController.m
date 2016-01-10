@@ -1,33 +1,27 @@
 //
-//  TimeTableViewController.m
+//  TimeDetailTableViewController.m
 //  familyTime_ios
 //
 //  Created by alice on 2016/1/10.
 //  Copyright © 2016年 alice. All rights reserved.
 //
 
-#import "TimeTableViewController.h"
 #import "TimeDetailTableViewController.h"
 
-#define K_MEMBER_CELL                @"MemberListCell"
-#define MY_ARRAY                     [NSMutableArray arrayWithObjects:@"Daddy", @"Mommy" ,@"Linda" ,@"Sunny" ,@"Leo", nil]
-#define TextColor                    [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:0.5]
-@interface TimeTableViewController ()
+@interface TimeDetailTableViewController ()
 
 @end
 
-@implementation TimeTableViewController
+@implementation TimeDetailTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
-     self.clearsSelectionOnViewWillAppear = NO;
-    [self.view setBackgroundColor: TextColor];
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-     self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    // self.clearsSelectionOnViewWillAppear = NO;
     
-     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,37 +32,23 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return MY_ARRAY.count;
+
+    return 1;
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return  76;
-}
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    tableView.alwaysBounceVertical = NO;
-    tableView.scrollEnabled = NO;
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:K_MEMBER_CELL];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:K_MEMBER_CELL];
-    }
     // Configure the cell...
-    cell.imageView.image = [UIImage imageNamed:[MY_ARRAY objectAtIndex:indexPath.item]];
-    cell.textLabel.text = [MY_ARRAY objectAtIndex:indexPath.item];
-    cell.detailTextLabel.text = @"Details about update time";
-    cell.detailTextLabel.textColor = TextColor;
+    
     return cell;
 }
-
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    TimeDetailTableViewController *detailData = [[TimeDetailTableViewController alloc] init];
-    [self.navigationController pushViewController:detailData animated:YES];
-}
+*/
 
 /*
 // Override to support conditional editing of the table view.

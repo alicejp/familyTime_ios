@@ -18,6 +18,7 @@
 		B4F6F8401C426DDA00154692 /* familyTime_iosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F83F1C426DDA00154692 /* familyTime_iosUITests.m */; };
 		B4F6F8501C427DC500154692 /* TimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F84F1C427DC500154692 /* TimeTableViewController.m */; };
 		B4F6F8531C427EBB00154692 /* MemberListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F8521C427EBB00154692 /* MemberListCell.m */; };
+		B4F6F8571C42A22700154692 /* TimeDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F8561C42A22700154692 /* TimeDetailTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		B4F6F84F1C427DC500154692 /* TimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTableViewController.m; sourceTree = "<group>"; };
 		B4F6F8511C427EBB00154692 /* MemberListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberListCell.h; sourceTree = "<group>"; };
 		B4F6F8521C427EBB00154692 /* MemberListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberListCell.m; sourceTree = "<group>"; };
+		B4F6F8551C42A22700154692 /* TimeDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeDetailTableViewController.h; sourceTree = "<group>"; };
+		B4F6F8561C42A22700154692 /* TimeDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeDetailTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,8 @@
 				B4F6F81E1C426DD900154692 /* TimeViewController.m */,
 				B4F6F84E1C427DC500154692 /* TimeTableViewController.h */,
 				B4F6F84F1C427DC500154692 /* TimeTableViewController.m */,
+				B4F6F8551C42A22700154692 /* TimeDetailTableViewController.h */,
+				B4F6F8561C42A22700154692 /* TimeDetailTableViewController.m */,
 				B4F6F8541C427EC000154692 /* View */,
 			);
 			name = Main;
@@ -299,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F6F8571C42A22700154692 /* TimeDetailTableViewController.m in Sources */,
 				B4F6F81F1C426DD900154692 /* TimeViewController.m in Sources */,
 				B4F6F8531C427EBB00154692 /* MemberListCell.m in Sources */,
 				B4F6F81C1C426DD900154692 /* AppDelegate.m in Sources */,
