@@ -46,12 +46,17 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    tableView.alwaysBounceVertical = NO;
+    tableView.scrollEnabled = NO;
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:K_MEMBER_CELL];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:K_MEMBER_CELL];
     }
     // Configure the cell...
+    cell.imageView.image = [UIImage imageNamed:[MY_ARRAY objectAtIndex:indexPath.item]];
     cell.textLabel.text = [MY_ARRAY objectAtIndex:indexPath.item];
+    cell.detailTextLabel.text = @"Details about update time";
     return cell;
 }
 
