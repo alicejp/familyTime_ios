@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "TimeViewController.h"
+#import "TimeTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    TimeViewController *rootViewController = [TimeViewController new];
+    TimeTableViewController *rootViewController = [TimeTableViewController new];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:rootViewController];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

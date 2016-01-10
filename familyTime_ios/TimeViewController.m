@@ -6,17 +6,18 @@
 //  Copyright © 2016年 alice. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TimeViewController.h"
 
-@interface ViewController ()
+@interface TimeViewController ()
 
 @end
 
-@implementation ViewController
+@implementation TimeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		B4F6F8191C426DD900154692 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F8181C426DD900154692 /* main.m */; };
 		B4F6F81C1C426DD900154692 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F81B1C426DD900154692 /* AppDelegate.m */; };
-		B4F6F81F1C426DD900154692 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F81E1C426DD900154692 /* ViewController.m */; };
+		B4F6F81F1C426DD900154692 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F81E1C426DD900154692 /* TimeViewController.m */; };
 		B4F6F8221C426DD900154692 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F6F8201C426DD900154692 /* Main.storyboard */; };
 		B4F6F8251C426DD900154692 /* familyTime_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F8231C426DD900154692 /* familyTime_ios.xcdatamodeld */; };
 		B4F6F8271C426DD900154692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4F6F8261C426DD900154692 /* Assets.xcassets */; };
 		B4F6F82A1C426DD900154692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F6F8281C426DD900154692 /* LaunchScreen.storyboard */; };
 		B4F6F8351C426DDA00154692 /* familyTime_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F8341C426DDA00154692 /* familyTime_iosTests.m */; };
 		B4F6F8401C426DDA00154692 /* familyTime_iosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F83F1C426DDA00154692 /* familyTime_iosUITests.m */; };
+		B4F6F8501C427DC500154692 /* TimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F84F1C427DC500154692 /* TimeTableViewController.m */; };
+		B4F6F8531C427EBB00154692 /* MemberListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F8521C427EBB00154692 /* MemberListCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +42,8 @@
 		B4F6F8181C426DD900154692 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B4F6F81A1C426DD900154692 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B4F6F81B1C426DD900154692 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B4F6F81D1C426DD900154692 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B4F6F81E1C426DD900154692 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B4F6F81D1C426DD900154692 /* TimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeViewController.h; sourceTree = "<group>"; };
+		B4F6F81E1C426DD900154692 /* TimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
 		B4F6F8211C426DD900154692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4F6F8241C426DD900154692 /* familyTime_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = familyTime_ios.xcdatamodel; sourceTree = "<group>"; };
 		B4F6F8261C426DD900154692 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +55,10 @@
 		B4F6F83B1C426DDA00154692 /* familyTime_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = familyTime_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F6F83F1C426DDA00154692 /* familyTime_iosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = familyTime_iosUITests.m; sourceTree = "<group>"; };
 		B4F6F8411C426DDA00154692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4F6F84E1C427DC500154692 /* TimeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTableViewController.h; sourceTree = "<group>"; };
+		B4F6F84F1C427DC500154692 /* TimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTableViewController.m; sourceTree = "<group>"; };
+		B4F6F8511C427EBB00154692 /* MemberListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberListCell.h; sourceTree = "<group>"; };
+		B4F6F8521C427EBB00154692 /* MemberListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberListCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,13 +111,7 @@
 			children = (
 				B4F6F81A1C426DD900154692 /* AppDelegate.h */,
 				B4F6F81B1C426DD900154692 /* AppDelegate.m */,
-				B4F6F81D1C426DD900154692 /* ViewController.h */,
-				B4F6F81E1C426DD900154692 /* ViewController.m */,
-				B4F6F8201C426DD900154692 /* Main.storyboard */,
-				B4F6F8261C426DD900154692 /* Assets.xcassets */,
-				B4F6F8281C426DD900154692 /* LaunchScreen.storyboard */,
-				B4F6F82B1C426DD900154692 /* Info.plist */,
-				B4F6F8231C426DD900154692 /* familyTime_ios.xcdatamodeld */,
+				B4F6F84D1C42751200154692 /* Main */,
 				B4F6F8171C426DD900154692 /* Supporting Files */,
 			);
 			path = familyTime_ios;
@@ -120,6 +120,11 @@
 		B4F6F8171C426DD900154692 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B4F6F8201C426DD900154692 /* Main.storyboard */,
+				B4F6F8261C426DD900154692 /* Assets.xcassets */,
+				B4F6F8281C426DD900154692 /* LaunchScreen.storyboard */,
+				B4F6F82B1C426DD900154692 /* Info.plist */,
+				B4F6F8231C426DD900154692 /* familyTime_ios.xcdatamodeld */,
 				B4F6F8181C426DD900154692 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -141,6 +146,27 @@
 				B4F6F8411C426DDA00154692 /* Info.plist */,
 			);
 			path = familyTime_iosUITests;
+			sourceTree = "<group>";
+		};
+		B4F6F84D1C42751200154692 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B4F6F81D1C426DD900154692 /* TimeViewController.h */,
+				B4F6F81E1C426DD900154692 /* TimeViewController.m */,
+				B4F6F84E1C427DC500154692 /* TimeTableViewController.h */,
+				B4F6F84F1C427DC500154692 /* TimeTableViewController.m */,
+				B4F6F8541C427EC000154692 /* View */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		B4F6F8541C427EC000154692 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4F6F8511C427EBB00154692 /* MemberListCell.h */,
+				B4F6F8521C427EBB00154692 /* MemberListCell.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4F6F81F1C426DD900154692 /* ViewController.m in Sources */,
+				B4F6F81F1C426DD900154692 /* TimeViewController.m in Sources */,
+				B4F6F8531C427EBB00154692 /* MemberListCell.m in Sources */,
 				B4F6F81C1C426DD900154692 /* AppDelegate.m in Sources */,
 				B4F6F8251C426DD900154692 /* familyTime_ios.xcdatamodeld in Sources */,
+				B4F6F8501C427DC500154692 /* TimeTableViewController.m in Sources */,
 				B4F6F8191C426DD900154692 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +530,7 @@
 				B4F6F8461C426DDA00154692 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4F6F8471C426DDA00154692 /* Build configuration list for PBXNativeTarget "familyTime_iosTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +539,7 @@
 				B4F6F8491C426DDA00154692 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4F6F84A1C426DDA00154692 /* Build configuration list for PBXNativeTarget "familyTime_iosUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +548,7 @@
 				B4F6F84C1C426DDA00154692 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
