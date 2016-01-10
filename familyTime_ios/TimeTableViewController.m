@@ -10,8 +10,8 @@
 #import "TimeDetailTableViewController.h"
 
 #define K_MEMBER_CELL                @"MemberListCell"
-#define MY_ARRAY                     [NSMutableArray arrayWithObjects:@"Daddy", @"Mommy" ,@"Linda" ,@"Sunny" ,@"Leo", nil]
-#define TextColor                    [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:0.5]
+
+
 @interface TimeTableViewController ()
 
 @end
