@@ -8,7 +8,7 @@
 
 #import "TimeTableViewController.h"
 #import "TimeDetailTableViewController.h"
-
+#import "EventTableViewController.h"
 
 
 
@@ -22,10 +22,10 @@
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
-     self.clearsSelectionOnViewWillAppear = NO;
+    self.clearsSelectionOnViewWillAppear = NO;
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-     self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
                                              initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                                              target:self
                                              action:@selector(Add:)];
@@ -74,12 +74,14 @@
     [self.navigationController pushViewController:detailData animated:YES];
 }
 - (void)Add:(id)sender{
-    EKEventStore *eventStore = [[EKEventStore alloc] init];
-    EKCalendar *calendar = [EKCalendar calendarForEntityType:EKEntityTypeEvent eventStore:eventStore];
-    calendar.title = @"Demo calendar";
-    
-    // Iterate over all sources in the event store and look for the local source
-
+    EventTableViewController *eventController = [[EventTableViewController alloc]init];
+    [self.navigationController pushViewController:eventController animated:YES];
+//    EKEventStore *eventStore = [[EKEventStore alloc] init];
+//    EKCalendar *calendar = [EKCalendar calendarForEntityType:EKEntityTypeEvent eventStore:eventStore];
+//    calendar.title = @"Demo calendar";
+//    
+//    // Iterate over all sources in the event store and look for the local source
+//
 }
 /*
 // Override to support conditional editing of the table view.

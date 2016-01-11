@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <EventKit/EventKit.h>
+
 @interface TimeTableViewController : UITableViewController
 
 @end

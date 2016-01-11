@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4A668CB1C43A1CE000AE1AF /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A668CA1C43A1CE000AE1AF /* EventKitUI.framework */; };
+		B4A668CE1C43AFFD000AE1AF /* EventTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A668CD1C43AFFD000AE1AF /* EventTableViewController.m */; };
 		B4F6F8191C426DD900154692 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F8181C426DD900154692 /* main.m */; };
 		B4F6F81C1C426DD900154692 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F81B1C426DD900154692 /* AppDelegate.m */; };
 		B4F6F81F1C426DD900154692 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F6F81E1C426DD900154692 /* TimeViewController.m */; };
@@ -40,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B4A668CA1C43A1CE000AE1AF /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		B4A668CC1C43AFFD000AE1AF /* EventTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewController.h; sourceTree = "<group>"; };
+		B4A668CD1C43AFFD000AE1AF /* EventTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewController.m; sourceTree = "<group>"; };
 		B4F6F8141C426DD900154692 /* familyTime_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = familyTime_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F6F8181C426DD900154692 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B4F6F81A1C426DD900154692 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -74,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A668CB1C43A1CE000AE1AF /* EventKitUI.framework in Frameworks */,
 				B4F6F85C1C42EDEC00154692 /* EventKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +144,7 @@
 				B4F6F82B1C426DD900154692 /* Info.plist */,
 				B4F6F8231C426DD900154692 /* familyTime_ios.xcdatamodeld */,
 				B4F6F8181C426DD900154692 /* main.m */,
+				B4A668CA1C43A1CE000AE1AF /* EventKitUI.framework */,
 				B4F6F85B1C42EDEC00154692 /* EventKit.framework */,
 			);
 			name = "Supporting Files";
@@ -166,6 +173,8 @@
 			children = (
 				B4F6F81D1C426DD900154692 /* TimeViewController.h */,
 				B4F6F81E1C426DD900154692 /* TimeViewController.m */,
+				B4A668CC1C43AFFD000AE1AF /* EventTableViewController.h */,
+				B4A668CD1C43AFFD000AE1AF /* EventTableViewController.m */,
 				B4F6F84E1C427DC500154692 /* TimeTableViewController.h */,
 				B4F6F84F1C427DC500154692 /* TimeTableViewController.m */,
 				B4F6F8551C42A22700154692 /* TimeDetailTableViewController.h */,
@@ -320,6 +329,7 @@
 				B4F6F81C1C426DD900154692 /* AppDelegate.m in Sources */,
 				B4F6F8251C426DD900154692 /* familyTime_ios.xcdatamodeld in Sources */,
 				B4F6F8501C427DC500154692 /* TimeTableViewController.m in Sources */,
+				B4A668CE1C43AFFD000AE1AF /* EventTableViewController.m in Sources */,
 				B4F6F8191C426DD900154692 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
