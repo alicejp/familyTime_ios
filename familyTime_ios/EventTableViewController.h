@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <EventKit/EventKit.h>
 #import <EventKitUI/EventKitUI.h>
-@interface EventTableViewController : UITableViewController <EKEventEditViewDelegate> {
+@interface EventTableViewController : UITableViewController <EKEventEditViewDelegate, UINavigationControllerDelegate> {
     EKEventViewController *detailViewController;
     EKEventStore *eventStore;
     EKCalendar   *defaultCalendar;
@@ -20,5 +20,8 @@
 @property (nonatomic, retain) EKCalendar   *defaultCalendar;
 @property (nonatomic, retain) NSMutableArray *eventsList;
 @property (nonatomic, retain) EKEventViewController *detailViewController;
+
+- (NSArray *)fetchEvents;
+- (void)AddEvent:(id)sender;
 
 @end

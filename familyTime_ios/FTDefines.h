@@ -11,6 +11,7 @@
 
 #define K_MEMBER_CELL                @"MemberListCell"
 #define K_DETAIL_CELL                @"DetailCell"
+#define K_Event_CELL                 @"EventCell"
 
 #define TextColor  [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:0.5]
 #define Name_ARRAY   [NSMutableArray arrayWithObjects:@"Daddy", @"Mommy" ,@"Linda" ,@"Sunny" ,@"Leo", nil]
